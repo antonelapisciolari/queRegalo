@@ -24,3 +24,12 @@ valid = false;
 
 }	
 	
+
+
+function logout ()
+{
+
+window.location = "index.html"; // Redirecting to other page.
+
+}	
+	

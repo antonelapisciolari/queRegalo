@@ -19,7 +19,7 @@
 
 <div class="navbar   navbar-fixed-top container header-limiter" role="navigation"> 
 	<div class="nav">
-	<img class="logo" src="../queRegalo/images/logo.png" width="70" height="70">
+	<img class="logo" src="../queRegalo/images/logo.png" width="70" height="70" onclick="action('main');">
 	<input type="text" class="search search-query form-control" placeholder="Regalo Especifico"  align="middle"/>
 
                                     <button class="btn btn-danger" type="button">
@@ -91,32 +91,35 @@
 				</div>
 			 </div>
 			 <div id="likes" class="col-md-8 col-sm-8" style="display: none;">
-				
 				<h1>Que le gusta?</h1>
 				<div class="picker">
-				<ul class="thumbnails image_picker_selector">
-					<li>
-						<div class="thumbnail">
-							<img class="image_picker_image" src="../queRegalo/images/decoracion.png" >
-						</div>
-					</li>
-					 <li>
-						<div class="thumbnail">
-								<img class="image_picker_image" src="../queRegalo/images/decoracion.png" >
-						</div>
-					</li>
-					 <li>
-						<div class="thumbnail">
-							<img class="image_picker_image" src="../queRegalo/images/decoracion.png" >
-						</div>
-						</li>
-					 <li>
-						<div class="thumbnail">
-							<img class="image_picker_image" src="../queRegalo/images/decoracion.png" >
-						</div>
-					</li>
-				</ul>
-	
+				<select  multiple="multiple" class="image-picker show-html centre">
+				  <option value=""></option>
+				  <option data-img-src="../queRegalo/images/arte.png" value="1">mujer</option>
+				  <option data-img-src="../queRegalo/images/cars.png" value="2">hombre</option>
+				  <option data-img-src="../queRegalo/images/ball23.png" value="3">unisex</option>
+				  <option data-img-src="../queRegalo/images/decoracion.png" value="4">mujer</option>
+				  <option data-img-src="../queRegalo/images/deporte.png" value="5">hombre</option>
+				  <option data-img-src="../queRegalo/images/espaercimiento.png" value="6">unisex</option>
+				  <option data-img-src="../queRegalo/images/espectaculos.png" value="7">mujer</option>
+				  <option data-img-src="../queRegalo/images/gastronomia.png" value="8">hombre</option>
+				  <option data-img-src="../queRegalo/images/hogar.png" value="9">unisex</option>		  
+				  <option data-img-src="../queRegalo/images/jardineria.png" value="10">unisex</option>
+				  <option data-img-src="../queRegalo/images/joya y accesorios.png" value="11">mujer</option>
+				  <option data-img-src="../queRegalo/images/juegos.png" value="12">hombre</option>
+				  <option data-img-src="../queRegalo/images/libros.png" value="13">unisex</option>		
+				</select>
+				</div>
+				<div class="form-actions">
+				<button id ="btn" type="button" class="btn btn-default" onclick="action('recommendation');" >Continuar</button>
+				</div>
+			 </div>
+			  <div id="recommendation" class="col-md-8 col-sm-8" style="display: none;">
+				<h1>El Regalo Perfecto</h1>
+				
+				<div class="form-actions">
+				<button id ="btn" type="button" class="btn btn-default" onclick="action('likes');">Volver</button>
+				<button id ="btn" type="button" class="btn btn-default" onclick="action('buy');">Comprar</button>
 				</div>
 			 </div>
 			<div class="col-md-2 col-sm-6 col3">
@@ -134,7 +137,7 @@
 	<script src="js/image-picker.min.js"></script>
 	<script>
 
-   var divs = ["main", "sex", "years", "likes"];
+   var divs = ["main", "sex", "years", "likes","recommendation", "buy"];
 	var visibleDivId = null;
 	function action(divId) {
 	  if(visibleDivId === divId) {

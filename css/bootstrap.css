@@ -315,6 +315,10 @@ img {
     padding-top: 30px;
 	 width: 100%;
     height: auto;}
+	
+.img3{
+	vertical-align: bottom;
+    width: 30%;}
 .img-responsive {
   display: block;
   max-width: 100%;

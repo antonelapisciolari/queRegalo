@@ -9,7 +9,8 @@
 	<link rel="stylesheet" href="css/header-user-dropdown.css">
     <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="css/style.css">
-	    <link rel="stylesheet" href="css/image-picker.css">
+	<link rel="stylesheet" href="css/image-picker.css">
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
 	<link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="../queRegalo/images/logo.ico">
   </head>
 
@@ -50,7 +51,7 @@
 				<a><img src="../queRegalo/images/marca3.png" class="img2"></a>
 				<a><img src="../queRegalo/images/marca4.png" class="img2"></a>
 			</div>
-			<div id="main" class="col-md-8 col-sm-8" style="display: block;">
+			<div id="main" class="col-md-8 col-sm-8" style="display: none;">
 				<a><img src="../queRegalo/images/tituloFoto.png" class="center-block mainPhoto" onclick="action('sex');"></a>
 				<h1>Destacados</h1>
 				<div class="row">
@@ -113,13 +114,60 @@
 				<button id ="btn" type="button" class="btn btn-default" onclick="action('recommendation');" >Continuar</button>
 				</div>
 			 </div>
-			  <div id="recommendation" class="col-md-8 col-sm-8" style="display: none;">
+			  <div id="recommendation" class="col-md-8 col-sm-8" style="display: block;">
 				<h1>El Regalo Perfecto</h1>
-				
-				<div class="form-actions">
-				<button id ="btn" type="button" class="btn btn-default" onclick="action('likes');">Volver</button>
-				<button id ="btn" type="button" class="btn btn-default" onclick="action('buy');">Comprar</button>
+		<div class="container">
+			<div id="cbp-pgcontainer">
+				<ul class="cbp-pggrid">
+					<li>
+						<div class="cbp-pgcontent">
+							<div class="cbp-pgitem">
+								<div class="cbp-pgitem-flip">
+									<img src="../queRegalo/images/mochila2.jpg" />
+									<img src="../queRegalo/images/mochila2.jpg" />
+								</div>
+							</div><!-- /cbp-pgitem -->
+							<ul class="cbp-pgoptions">
+								<li>
+								<img src="../queRegalo/images/mini1.jpg" /></li>
+								<li>
+								<img src="../queRegalo/images/mini2.jpg" />
+								</li>
+								<li class="cbp-pgoptsize">								
+									<span data-size="XL">XL</span>
+									<div class="cbp-pgopttooltip">
+										<span data-size="XL">XL</span>
+										<span data-size="L">L</span>
+										<span data-size="M">M</span>
+										<span data-size="S">S</span>
+									</div>
+								</li>
+								<li class="cbp-pgoptcolor">
+									<span data-color="c1">Blue</span>
+									<div class="cbp-pgopttooltip">
+										<span data-color="c1">Blue</span>
+										<span data-color="c2">Pink</span>
+										<span data-color="c3">Orange</span>
+										<span data-color="c4">Green</span>
+									</div>
+								</li>
+								<li class="cbp-pgoptcart"></li>
+							</ul><!-- cbp-pgoptions -->
+						</div><!-- cbp-pgcontent -->
+						<div class="cbp-pginfo">
+							<h3>Mochila Nike</h3>
+							<span class="cbp-pgprice">$219</span>
+						</div>
+					</li>
+	
+				</ul><!-- /cbp-pggrid -->
+			</div><!-- /cbp-pgcontainer -->
+							<div>
+				<button type="button" class="btn btn-secondary btn-lg">Large button</button>
 				</div>
+		</div>
+				
+
 			 </div>
 			<div class="col-md-2 col-sm-6 col3">
 				<a><img src="../queRegalo/images/marca5.png" class="img2"></a>

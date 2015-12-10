@@ -2,7 +2,7 @@
 <html >
   <head>
     <meta charset="UTF-8">
-    <title>Que Regalo?</title>
+    <title>&iquest;Que Regalo?</title>
     <link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/header-login-signup.css">
@@ -28,14 +28,14 @@
                                     </button>
 
 			<div class="header-user-menu">
-			<img src="../queRegalo/images/user.jpg" alt="User Image" />
+			<img src="../queRegalo/images/user1.jpg" alt="User Image" />
 			<ul>
-				<li><a href="#">Profile</a></li>
+				<li><a href="#">Perfil</a></li>
 				<li><a href="#">Compras</a></li>
-				<li><a href="#" class="highlight" onclick="logout()";>Cerrar Sesion</a></li>
+				<li><a href="#" class="highlight" onclick="logout()";>Cerrar Sesi&oacute;n</a></li>
 			</ul>
 			</div>
-		<p>Envios a todo el pais desde $99. Proximamente podras descargar nuestra APP </p>
+		<p>Pr&oacute;ximamente podr&aacute;s descargar nuestra APP </p>
 		</div>
 
 
@@ -53,7 +53,7 @@
 			</div>
 			<div id="main" class="col-md-8 col-sm-8" style="display: block;">
 				<a><img src="../queRegalo/images/tituloFoto.png" class="center-block mainPhoto" onclick="action('sex');"></a>
-				<h1>Destacados</h1>
+				<h1 align="center" class="title">Destacados</h1>
 				<div class="row">
 					<div class="col-md-3">
 						<img id="image1" 
@@ -71,15 +71,15 @@
 				</div>
 			 </div>
 			<div id="sex" class="col-md-8 col-sm-8" style="display: none;" >
-				<h1 align="center" class="title">Elige el sexo del/la agazajad@?</h1>
-				<select  class="image-picker show-html centre">
-				  <option value=""></option>
-				  <option data-img-src="../queRegalo/images/mujer.png" value="1">mujer</option>
-				  <option data-img-src="../queRegalo/images/hombre.png" value="2">hombre</option>
-				  <option data-img-src="../queRegalo/images/unisex.png" value="3">unisex</option>
+				<h1 align="center" class="title">Elige el sexo del/la agazajad@</h1>
+				<select  id="sexo" class="image-picker show-html centre">
+				  <option></option>
+				  <option data-img-src="../queRegalo/images/mujer.png" value="mujer" >mujer</option>
+				  <option data-img-src="../queRegalo/images/hombre.png" value="hombre" >hombre</option>
+				  <option data-img-src="../queRegalo/images/unisex.png" value="uni">unisex</option>
 				</select>
 				<div class="form-actions">
-				<button type="button" class="btn btn-default" onclick="action('years');">Continuar</button>
+				<button type="button" class="btn btn-default" onclick="funciones();">Continuar</button>
 				</div>
 			 </div>		 
 			 <div id="years" class="col-md-8 col-sm-8" style="display: none;" >
@@ -88,11 +88,11 @@
 				<input align="center" type="text" class="form-control edadinput" id="edad">
 				</div>
 				<div class="form-actions">
-				<button id ="btn" type="button" class="btn btn-default" onclick="action('likes');" disabled >Continuar</button>
+				<button id ="btn" type="button" class="btn btn-default" onclick="funcionesEdad();" disabled >Continuar</button>
 				</div>
 			 </div>
 			 <div id="likes" class="col-md-8 col-sm-8" style="display: none;">
-				<h1>Que le gusta?</h1>
+				<h1 align="center" class="title">&iquest;Que le gusta?</h1>
 				<div class="picker">
 				<select  multiple="multiple" class="image-picker show-html centre">
 				  <option value=""></option>
@@ -111,64 +111,50 @@
 				</select>
 				</div>
 				<div class="form-actions">
-				<button id ="btn" type="button" class="btn btn-default" onclick="action('recommendation');" >Continuar</button>
+				<button id ="btn" type="button" class="btn btn-default" onclick="funciones2();" >Continuar</button>
 				</div>
 			 </div>
 			  <div id="recommendation" class="col-md-8 col-sm-8" style="display: none;">
-				<h1>El Regalo Perfecto</h1>
-		<div class="container">
-			<div id="cbp-pgcontainer">
-				<ul class="cbp-pggrid">
-					<li>
-						<div class="cbp-pgcontent">
-							<div class="cbp-pgitem">
-								<div class="cbp-pgitem-flip">
-									<img src="../queRegalo/images/mochila2.jpg" />
-									<img src="../queRegalo/images/mochila2.jpg" />
-								</div>
-							</div><!-- /cbp-pgitem -->
-							<ul class="cbp-pgoptions">
-								<li>
-								<img src="../queRegalo/images/mini1.jpg" /></li>
-								<li>
-								<img src="../queRegalo/images/mini2.jpg" />
-								</li>
-								<li class="cbp-pgoptsize">								
-									<span data-size="XL">XL</span>
-									<div class="cbp-pgopttooltip">
-										<span data-size="XL">XL</span>
-										<span data-size="L">L</span>
-										<span data-size="M">M</span>
-										<span data-size="S">S</span>
-									</div>
-								</li>
-								<li class="cbp-pgoptcolor">
-									<span data-color="c1">Blue</span>
-									<div class="cbp-pgopttooltip">
-										<span data-color="c1">Blue</span>
-										<span data-color="c2">Pink</span>
-										<span data-color="c3">Orange</span>
-										<span data-color="c4">Green</span>
-									</div>
-								</li>
-								<li class="cbp-pgoptcart"></li>
-							</ul><!-- cbp-pgoptions -->
-						</div><!-- cbp-pgcontent -->
-						<div class="cbp-pginfo">
-							<h3>Mochila Nike</h3>
-							<span class="cbp-pgprice">$219</span>
-						</div>
-					</li>
-	
-				</ul><!-- /cbp-pggrid -->
-			</div><!-- /cbp-pgcontainer -->
-							<div>
-				<button type="button" class="btn btn-secondary btn-lg">Large button</button>
+				<h1 align="center" class="title">El Regalo Perfecto</h1>
+				<div class="container">
+				<div class="row">
+					<div class="col-md-3 primer text-center">
+							<h3 align="center">Mochila Nike</h3>
+							<h1 align="center">$550</h1>
+							<h5> Con la impronta deportiva de la marca, la Mochila Nike Classic Sand es perfecta para llevar todas tus pertenencias cuando vas a trabajar, a estudiar o a pasear. Se trata de un modelo fabricado &iacute;ntegramente en poli&eacute;ster, que cuenta con compartimiento principal amplio, cierre doble, bolsillo de seguridad y correas ajustables y acolchadas para mayor comodidad</h5>
+						<button type="button" class="center-block btn btn-secondary">Comprar</button>
+					</div>
+					<div class="col-md-1 seg">
+							<img src="../queRegalo/images/mochila2.jpg" />
+					</div>
 				</div>
-		</div>
+			</div>
+
 				
 
 			 </div>
+			 
+			 
+			 <div id="recommendationmujer" class="col-md-8 col-sm-8" style="display: none;">
+				<h1 align="center" class="title">El Regalo Perfecto</h1>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 primer text-center">
+							<h3 align="center">Jasy (Trilog&iacute;a del perd&oacute;n 1)</h3>
+							<h1 align="center">$419</h1>
+							<h5> Un amor que nace con la vida
+							Febrero de 1736. El padre Ursus, superior de la misi&oacute;n jesu&iacute;tica de San Ignacio Mini, navega por el r&iacute;o Paran&aacute; junto a su protegido, un ni&ntilde;o de cinco a&ntilde;os, Aitor &ntilde;eenguir&uacute;. </h5>
+						<button type="button" class="boton btn btn-secondary">Comprar</button>
+					</div>
+					<div class="col-md-1 seg">
+							<img src="../queRegalo/images/libro.jpg" />
+					</div>
+				</div>
+			</div>
+					
+			</div>
+			
+
 			<div class="col-md-2 col-sm-6 col3">
 				<a><img src="../queRegalo/images/marca5.png" class="img2"></a>
 				<a><img src="../queRegalo/images/marca6.png" class="img2"></a>
@@ -183,8 +169,50 @@
 	<script src="js/image-picker.js"></script>
 	<script src="js/image-picker.min.js"></script>
 	<script>
+	
+	
+	function funcionesEdad()
+	{
+	document.getElementById('edad').value = "";
+	action('likes');
+	}
+	
+	var strUser = 'mujer';
+	function funciones2()
+	{
+		if (strUser == "mujer")
+		{
+		
+			action('recommendationmujer');
+		}
+		else
+		{
+			action('recommendation');
+		}
+	}
+	
+	 function clearSelected(){
+		var elements = document.getElementById("sexo").options;
 
-   var divs = ["main", "sex", "years", "likes","recommendation", "buy"];
+		for(var i = 0; i < elements.length; i++){
+		  elements[i].selected = false;
+    }
+  } 
+  
+  
+	function funciones ()
+	{
+
+		flows();
+		action('years');
+
+	}
+	function flows()
+	{
+		var e = document.getElementById("sexo");
+		strUser = e.options[e.selectedIndex].value;
+	}
+   var divs = ["main", "sex", "years", "likes","recommendation", "recommendationmujer", "buy"];
 	var visibleDivId = null;
 	function action(divId) {
 	  if(visibleDivId === divId) {
@@ -206,6 +234,8 @@
 		}
 	  }
 }
+
+
 $(".edadinput").change(function(){
     var enablebtn = true;
     $(".edadinput").each(function(){
@@ -220,6 +250,8 @@ $(".edadinput").change(function(){
 });
 
 $("select").imagepicker();
+
+	  
 
   </script>
 

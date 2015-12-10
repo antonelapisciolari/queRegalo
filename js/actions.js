@@ -4,8 +4,8 @@ var valid = false
 var username = document.getElementById("user-email").value;
 var password = document.getElementById("user-pw").value;
 
-var unArray = ["fran@gmail.com", "agos@gmail.com", "anto", "admin"];  // as many as you like - no comma after final entry
-var pwArray = ["regalo", "regalo", "regalo", "admin"];  // the corresponding passwords;
+var unArray = ["fran@gmail.com", "agus", "anto", "agus@gmail.com"];  // as many as you like - no comma after final entry
+var pwArray = ["regalo", "agus", "regalo", "admin"];  // the corresponding passwords;
 
 for (var i=0; i <unArray.length; i++) {
 if ((username == unArray[i]) && (password == pwArray[i])) {
